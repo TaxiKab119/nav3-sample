@@ -32,6 +32,15 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+            // Nav3 and related adaptive UI
+            implementation(libs.androidx.nav3.ui)
+            implementation(libs.androidx.lifecycle.viewmodel.nav3)
+            implementation(libs.androidx.material3.adaptive)
+            implementation(libs.androidx.material3.adaptive.nav3)
+            // Serialization JSON for shared code
+            implementation(libs.kotlinx.serialization.json)
+            // Koin DI for shared code
+            implementation(libs.koin.core)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
